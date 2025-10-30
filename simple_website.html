@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trang mẫu — Lê Trường Giang</title>
+  <meta name="description" content="Trang HTML mẫu có header, main, footer; danh sách, ảnh và liên kết ngoài.">
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.4}
+    body{max-width:960px;margin:24px auto;padding:0 16px;color:#111}
+    header, main, footer{padding:12px;border-radius:8px}
+    header{background:#f3f4f6}
+    main{background:#fff;margin:12px 0}
+    footer{background:#fafafa;font-size:0.9rem}
+    .gallery{display:flex;gap:8px;flex-wrap:wrap}
+    .gallery img{width:calc(33% - 6px);height:160px;object-fit:cover;border-radius:6px}
+    nav a{margin-right:10px}
+    ul{padding-left:1.25rem}
+    @media (max-width:600px){.gallery img{width:100%;height:200px}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trang mẫu — Ví dụ HTML đầy đủ</h1>
+    <p>Tệp này chứa các thẻ ngữ nghĩa (header, main, footer), một danh sách, nhiều ảnh, và ít nhất một liên kết bên ngoài.</p>
+    <nav>
+      <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a>
+      <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Validator</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Danh sách tính năng</h2>
+      <p>Dưới đây là một danh sách gồm 3 mục (ít nhất) như yêu cầu:</p>
+      <ul>
+        <li>Thẻ ngữ nghĩa: header, main, footer (ít nhất 3 thẻ).</li>
+        <li>Danh sách gồm ít nhất 3 mục (liên kết, mô tả, mục thứ 3).</li>
+        <li>Ba hình ảnh trong phần gallery.</li>
+      </ul>
+
+      <h2>Bộ sưu tập ảnh</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=1200&q=80&auto=format&fit=crop" alt="Phong cảnh 1">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1200&q=80&auto=format&fit=crop" alt="Phong cảnh 2">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80&auto=format&fit=crop" alt="Phong cảnh 3">
+      </div>
+
+      <p>Bạn có thể kiểm tra trang bằng <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C Markup Validation Service</a> (Validate by File upload or by URI).</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Liên hệ: <a href="mailto:example@example.com">example@example.com</a></p>
+    <p>&copy; 2025 — Trang mẫu.</p>
+  </footer>
+</body>
+</html>
